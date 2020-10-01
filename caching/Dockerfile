@@ -5,4 +5,4 @@ RUN --mount=type=cache,target=/root/.cache/pip \
     pip install numpy matplotlib
 
 
-RUN apt-get update && apt-get install openssh-server
+RUN apt-get update && apt-get install -y openssh-server
