@@ -1,4 +1,4 @@
-### Docker buildx
+# Docker buildx
 
 #### What is it?
 Docker build 2.0
@@ -6,6 +6,7 @@ Docker build 2.0
 #### Documentation:
 
 <https://github.com/docker/buildx>
+
 <https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/experimental.md>
 
 #### What is new?
@@ -20,9 +21,9 @@ Docker build 2.0
 
 * Add a cache directory to your dockerfiles
 
-* Remote caching (supported by dockerhub but not aws yet)
+* Remote build cache (supported by dockerhub but not aws yet) (not in the demo)
 
 * Output single binaries/directories instead of Docker images, 
-  useful for compilation of binaries or Python wheels 
+  useful for compilation of binaries or Python wheels (not in the demo)
 
 * `docker buildx bake` to build multiple images at the same time
