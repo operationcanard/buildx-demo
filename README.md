@@ -1,15 +1,15 @@
 # Docker buildx
 
-#### What is it?
+### What is it?
 Docker build 2.0
 
-#### Documentation:
+### Documentation:
 
 <https://github.com/docker/buildx>
 
 <https://github.com/moby/buildkit/blob/master/frontend/dockerfile/docs/experimental.md>
 
-#### What is new?
+### What's new?
 
 * Supports for secrets
 
