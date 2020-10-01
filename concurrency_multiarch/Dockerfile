@@ -12,12 +12,12 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 
 ENV PATH="/opt/conda/bin:${PATH}"
 
-RUN pip install numpy matplotlib jupyter
+RUN pip install numpy ipython
 
 # -------------------------------------------------------------------
 FROM basic_ubuntu_cuda as final_image
 
-RUN apt-get update && apt-get install sqitch libdbd-sqlite3-perl telnet zsh iputils-ping htop
+RUN apt-get update && apt-get install sqitch telnet iputils-ping htop
 
 COPY --from=python_install /opt/conda /opt/conda
 ENV PATH="/opt/conda/bin:${PATH}"

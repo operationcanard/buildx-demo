@@ -2,7 +2,7 @@
 FROM python:3.7
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install numpy tensorflow matplotlib
+    pip install numpy matplotlib
 
 
 RUN apt-get update && apt-get install openssh-server
